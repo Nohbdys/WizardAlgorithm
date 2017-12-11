@@ -79,7 +79,7 @@ namespace WizardAlgorithmForms
 
             //Write's the cells grid position
             dc.DrawString(string.Format("{0}", position), new Font("Arial", 7, FontStyle.Regular), new SolidBrush(Color.Black), position.X * cellSize, (position.Y * cellSize) + 10);
-        }
+          }
 
         /// <summary>
         /// Clicks the cell
@@ -109,6 +109,15 @@ namespace WizardAlgorithmForms
                 sprite = null;
                 myType = EMPTY;
             }
+
+
         }
     }
 }
+
+
+/// Til opsætning af wall
+//if (x >= 4 && x <= 6 && y >= 1 && y <= 6)  
+//{
+
+//}
