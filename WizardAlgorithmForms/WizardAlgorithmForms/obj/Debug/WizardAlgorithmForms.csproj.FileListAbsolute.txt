@@ -10,29 +10,15 @@ c:\users\oliver\documents\visual studio 2015\Projects\WizardAlgorithmForms\Wizar
 c:\users\oliver\documents\visual studio 2015\Projects\WizardAlgorithmForms\WizardAlgorithmForms\obj\Debug\WizardAlgorithmForms.exe
 c:\users\oliver\documents\visual studio 2015\Projects\WizardAlgorithmForms\WizardAlgorithmForms\obj\Debug\WizardAlgorithmForms.pdb
 c:\users\oliver\documents\visual studio 2015\Projects\WizardAlgorithmForms\WizardAlgorithmForms\obj\Debug\WizardAlgorithmForms.Form1.resources
-C:\Users\SifLerudVedelStamp\Documents\ea dania\3. Semester\06 - Algoritmer\Opgave\WizardAlgorithm\WizardAlgorithmForms\WizardAlgorithmForms\bin\Debug\WizardAlgorithmForms.exe.config
-C:\Users\SifLerudVedelStamp\Documents\ea dania\3. Semester\06 - Algoritmer\Opgave\WizardAlgorithm\WizardAlgorithmForms\WizardAlgorithmForms\obj\Debug\WizardAlgorithmForms.exe
-C:\Users\SifLerudVedelStamp\Documents\ea dania\3. Semester\06 - Algoritmer\Opgave\WizardAlgorithm\WizardAlgorithmForms\WizardAlgorithmForms\obj\Debug\WizardAlgorithmForms.pdb
-C:\Users\SifLerudVedelStamp\Documents\ea dania\3. Semester\06 - Algoritmer\Opgave\WizardAlgorithm\WizardAlgorithmForms\WizardAlgorithmForms\bin\Debug\Images\Goal.png
-C:\Users\SifLerudVedelStamp\Documents\ea dania\3. Semester\06 - Algoritmer\Opgave\WizardAlgorithm\WizardAlgorithmForms\WizardAlgorithmForms\bin\Debug\Images\groundSingleTile.png
-C:\Users\SifLerudVedelStamp\Documents\ea dania\3. Semester\06 - Algoritmer\Opgave\WizardAlgorithm\WizardAlgorithmForms\WizardAlgorithmForms\bin\Debug\Images\groundTiles.png
-C:\Users\SifLerudVedelStamp\Documents\ea dania\3. Semester\06 - Algoritmer\Opgave\WizardAlgorithm\WizardAlgorithmForms\WizardAlgorithmForms\bin\Debug\Images\key.png
-C:\Users\SifLerudVedelStamp\Documents\ea dania\3. Semester\06 - Algoritmer\Opgave\WizardAlgorithm\WizardAlgorithmForms\WizardAlgorithmForms\bin\Debug\Images\oneEyeMonster.png
-C:\Users\SifLerudVedelStamp\Documents\ea dania\3. Semester\06 - Algoritmer\Opgave\WizardAlgorithm\WizardAlgorithmForms\WizardAlgorithmForms\bin\Debug\Images\path.png
-C:\Users\SifLerudVedelStamp\Documents\ea dania\3. Semester\06 - Algoritmer\Opgave\WizardAlgorithm\WizardAlgorithmForms\WizardAlgorithmForms\bin\Debug\Images\portalA.png
-C:\Users\SifLerudVedelStamp\Documents\ea dania\3. Semester\06 - Algoritmer\Opgave\WizardAlgorithm\WizardAlgorithmForms\WizardAlgorithmForms\bin\Debug\Images\portalB.png
-C:\Users\SifLerudVedelStamp\Documents\ea dania\3. Semester\06 - Algoritmer\Opgave\WizardAlgorithm\WizardAlgorithmForms\WizardAlgorithmForms\bin\Debug\Images\redMonster.png
-C:\Users\SifLerudVedelStamp\Documents\ea dania\3. Semester\06 - Algoritmer\Opgave\WizardAlgorithm\WizardAlgorithmForms\WizardAlgorithmForms\bin\Debug\Images\Start.png
-C:\Users\SifLerudVedelStamp\Documents\ea dania\3. Semester\06 - Algoritmer\Opgave\WizardAlgorithm\WizardAlgorithmForms\WizardAlgorithmForms\bin\Debug\Images\threeEyeMonster.png
-C:\Users\SifLerudVedelStamp\Documents\ea dania\3. Semester\06 - Algoritmer\Opgave\WizardAlgorithm\WizardAlgorithmForms\WizardAlgorithmForms\bin\Debug\Images\tower.png
-C:\Users\SifLerudVedelStamp\Documents\ea dania\3. Semester\06 - Algoritmer\Opgave\WizardAlgorithm\WizardAlgorithmForms\WizardAlgorithmForms\bin\Debug\Images\tree.png
-C:\Users\SifLerudVedelStamp\Documents\ea dania\3. Semester\06 - Algoritmer\Opgave\WizardAlgorithm\WizardAlgorithmForms\WizardAlgorithmForms\bin\Debug\Images\treeSingle.png
-C:\Users\SifLerudVedelStamp\Documents\ea dania\3. Semester\06 - Algoritmer\Opgave\WizardAlgorithm\WizardAlgorithmForms\WizardAlgorithmForms\bin\Debug\Images\Wall.png
-C:\Users\SifLerudVedelStamp\Documents\ea dania\3. Semester\06 - Algoritmer\Opgave\WizardAlgorithm\WizardAlgorithmForms\WizardAlgorithmForms\bin\Debug\Images\wallSingleTile.png
-C:\Users\SifLerudVedelStamp\Documents\ea dania\3. Semester\06 - Algoritmer\Opgave\WizardAlgorithm\WizardAlgorithmForms\WizardAlgorithmForms\bin\Debug\Images\wizardFront.png
-C:\Users\SifLerudVedelStamp\Documents\ea dania\3. Semester\06 - Algoritmer\Opgave\WizardAlgorithm\WizardAlgorithmForms\WizardAlgorithmForms\bin\Debug\WizardAlgorithmForms.exe
-C:\Users\SifLerudVedelStamp\Documents\ea dania\3. Semester\06 - Algoritmer\Opgave\WizardAlgorithm\WizardAlgorithmForms\WizardAlgorithmForms\bin\Debug\WizardAlgorithmForms.pdb
-C:\Users\SifLerudVedelStamp\Documents\ea dania\3. Semester\06 - Algoritmer\Opgave\WizardAlgorithm\WizardAlgorithmForms\WizardAlgorithmForms\obj\Debug\WizardAlgorithmForms.csprojResolveAssemblyReference.cache
-C:\Users\SifLerudVedelStamp\Documents\ea dania\3. Semester\06 - Algoritmer\Opgave\WizardAlgorithm\WizardAlgorithmForms\WizardAlgorithmForms\obj\Debug\WizardAlgorithmForms.Form1.resources
-C:\Users\SifLerudVedelStamp\Documents\ea dania\3. Semester\06 - Algoritmer\Opgave\WizardAlgorithm\WizardAlgorithmForms\WizardAlgorithmForms\obj\Debug\WizardAlgorithmForms.Properties.Resources.resources
-C:\Users\SifLerudVedelStamp\Documents\ea dania\3. Semester\06 - Algoritmer\Opgave\WizardAlgorithm\WizardAlgorithmForms\WizardAlgorithmForms\obj\Debug\WizardAlgorithmForms.csproj.GenerateResource.Cache
+C:\Users\Oliver\Desktop\Programmerings Eksamen Noter\Algorytme\Algorithm Project\WizardAlgorithm\WizardAlgorithmForms\WizardAlgorithmForms\bin\Debug\WizardAlgorithmForms.exe.config
+C:\Users\Oliver\Desktop\Programmerings Eksamen Noter\Algorytme\Algorithm Project\WizardAlgorithm\WizardAlgorithmForms\WizardAlgorithmForms\obj\Debug\WizardAlgorithmForms.exe
+C:\Users\Oliver\Desktop\Programmerings Eksamen Noter\Algorytme\Algorithm Project\WizardAlgorithm\WizardAlgorithmForms\WizardAlgorithmForms\obj\Debug\WizardAlgorithmForms.pdb
+C:\Users\Oliver\Desktop\Programmerings Eksamen Noter\Algorytme\Algorithm Project\WizardAlgorithm\WizardAlgorithmForms\WizardAlgorithmForms\bin\Debug\Images\Goal.png
+C:\Users\Oliver\Desktop\Programmerings Eksamen Noter\Algorytme\Algorithm Project\WizardAlgorithm\WizardAlgorithmForms\WizardAlgorithmForms\bin\Debug\Images\Start.png
+C:\Users\Oliver\Desktop\Programmerings Eksamen Noter\Algorytme\Algorithm Project\WizardAlgorithm\WizardAlgorithmForms\WizardAlgorithmForms\bin\Debug\Images\Wall.png
+C:\Users\Oliver\Desktop\Programmerings Eksamen Noter\Algorytme\Algorithm Project\WizardAlgorithm\WizardAlgorithmForms\WizardAlgorithmForms\bin\Debug\WizardAlgorithmForms.exe
+C:\Users\Oliver\Desktop\Programmerings Eksamen Noter\Algorytme\Algorithm Project\WizardAlgorithm\WizardAlgorithmForms\WizardAlgorithmForms\bin\Debug\WizardAlgorithmForms.pdb
+C:\Users\Oliver\Desktop\Programmerings Eksamen Noter\Algorytme\Algorithm Project\WizardAlgorithm\WizardAlgorithmForms\WizardAlgorithmForms\obj\Debug\WizardAlgorithmForms.csprojResolveAssemblyReference.cache
+C:\Users\Oliver\Desktop\Programmerings Eksamen Noter\Algorytme\Algorithm Project\WizardAlgorithm\WizardAlgorithmForms\WizardAlgorithmForms\obj\Debug\WizardAlgorithmForms.Form1.resources
+C:\Users\Oliver\Desktop\Programmerings Eksamen Noter\Algorytme\Algorithm Project\WizardAlgorithm\WizardAlgorithmForms\WizardAlgorithmForms\obj\Debug\WizardAlgorithmForms.Properties.Resources.resources
+C:\Users\Oliver\Desktop\Programmerings Eksamen Noter\Algorytme\Algorithm Project\WizardAlgorithm\WizardAlgorithmForms\WizardAlgorithmForms\obj\Debug\WizardAlgorithmForms.csproj.GenerateResource.Cache
