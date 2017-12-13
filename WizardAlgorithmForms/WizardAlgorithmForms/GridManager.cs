@@ -23,7 +23,7 @@ namespace WizardAlgorithmForms
         /// <summary>
         /// This list contains all cells
         /// </summary>
-        private List<Cell> grid;
+        public List<Cell> grid;
 
         /// <summary>
         /// The current click type

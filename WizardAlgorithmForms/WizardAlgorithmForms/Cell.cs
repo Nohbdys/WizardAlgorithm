@@ -17,12 +17,22 @@ namespace WizardAlgorithmForms
         /// <summary>
         /// The grid position of the cell
         /// </summary>
-        private Point position;
+        public Point position;
+
+        /// <summary>
+        /// Is the cell walkable or blocked
+        /// </summary>
+        private bool IsWall;
 
         /// <summary>
         /// The size of the cell
         /// </summary>
         private int cellSize;
+
+        
+        private int G;
+        private int H;
+        public int F;
 
         /// <summary>
         /// The cell's sprite
@@ -60,6 +70,7 @@ namespace WizardAlgorithmForms
             //Sets the cell size
             this.cellSize = size;
 
+            F = G + H;
         }
 
         /// <summary>
