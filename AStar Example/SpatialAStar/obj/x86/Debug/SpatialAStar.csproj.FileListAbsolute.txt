@@ -7,3 +7,11 @@ C:\Users\Oliver\Desktop\Programmerings Eksamen Noter\Algorytme\Algorithm Project
 C:\Users\Oliver\Desktop\Programmerings Eksamen Noter\Algorytme\Algorithm Project\AStar Example\SpatialAStar\obj\x86\Debug\SpatialAStar.csproj.CoreCompileInputs.cache
 C:\Users\Oliver\Desktop\Programmerings Eksamen Noter\Algorytme\Algorithm Project\AStar Example\SpatialAStar\obj\x86\Debug\SpatialAStar.exe
 C:\Users\Oliver\Desktop\Programmerings Eksamen Noter\Algorytme\Algorithm Project\AStar Example\SpatialAStar\obj\x86\Debug\SpatialAStar.pdb
+C:\Users\SifLerudVedelStamp\Documents\ea dania\3. Semester\06 - Algoritmer\Opgave\WizardAlgorithm\AStar Example\SpatialAStar\bin\Debug\SpatialAStar.exe
+C:\Users\SifLerudVedelStamp\Documents\ea dania\3. Semester\06 - Algoritmer\Opgave\WizardAlgorithm\AStar Example\SpatialAStar\bin\Debug\SpatialAStar.pdb
+C:\Users\SifLerudVedelStamp\Documents\ea dania\3. Semester\06 - Algoritmer\Opgave\WizardAlgorithm\AStar Example\SpatialAStar\obj\x86\Debug\SpatialAStar.csprojResolveAssemblyReference.cache
+C:\Users\SifLerudVedelStamp\Documents\ea dania\3. Semester\06 - Algoritmer\Opgave\WizardAlgorithm\AStar Example\SpatialAStar\obj\x86\Debug\SpatialAStar.Form1.resources
+C:\Users\SifLerudVedelStamp\Documents\ea dania\3. Semester\06 - Algoritmer\Opgave\WizardAlgorithm\AStar Example\SpatialAStar\obj\x86\Debug\SpatialAStar.Properties.Resources.resources
+C:\Users\SifLerudVedelStamp\Documents\ea dania\3. Semester\06 - Algoritmer\Opgave\WizardAlgorithm\AStar Example\SpatialAStar\obj\x86\Debug\SpatialAStar.csproj.GenerateResource.Cache
+C:\Users\SifLerudVedelStamp\Documents\ea dania\3. Semester\06 - Algoritmer\Opgave\WizardAlgorithm\AStar Example\SpatialAStar\obj\x86\Debug\SpatialAStar.exe
+C:\Users\SifLerudVedelStamp\Documents\ea dania\3. Semester\06 - Algoritmer\Opgave\WizardAlgorithm\AStar Example\SpatialAStar\obj\x86\Debug\SpatialAStar.pdb

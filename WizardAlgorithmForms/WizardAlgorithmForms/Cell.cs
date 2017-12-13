@@ -17,22 +17,12 @@ namespace WizardAlgorithmForms
         /// <summary>
         /// The grid position of the cell
         /// </summary>
-        public Point position;
-
-        /// <summary>
-        /// Is the cell walkable or blocked
-        /// </summary>
-        private bool IsWall;
+        private Point position;
 
         /// <summary>
         /// The size of the cell
         /// </summary>
         private int cellSize;
-
-        
-        private int G;
-        private int H;
-        public int F;
 
         /// <summary>
         /// The cell's sprite
@@ -70,7 +60,6 @@ namespace WizardAlgorithmForms
             //Sets the cell size
             this.cellSize = size;
 
-            F = G + H;
         }
 
         /// <summary>
@@ -142,7 +131,6 @@ namespace WizardAlgorithmForms
             {
                 sprite = Image.FromFile(@"Images\groundSingleTile.png");
             }
-
 
             //Write's the cells grid position
             dc.DrawString(string.Format("{0}", position), new Font("Arial", 7, FontStyle.Regular), new SolidBrush(Color.Black), position.X * cellSize, (position.Y * cellSize) + 10);
