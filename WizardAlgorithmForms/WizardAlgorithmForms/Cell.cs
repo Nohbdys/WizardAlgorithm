@@ -9,6 +9,7 @@ using static WizardAlgorithmForms.CellType;
 namespace WizardAlgorithmForms
 {
     enum CellType { START, GOAL, WALL, EMPTY };
+    enum Accesssible { TRUE, FALSE };
 
     class Cell
     {
@@ -85,6 +86,52 @@ namespace WizardAlgorithmForms
             if (sprite != null)
             {
                 dc.DrawImage(sprite, BoundingRectangle);
+            }
+            //Renders all graphics
+            //Renders wizard
+            if (position.X == 1 && position.Y == 7)
+            {
+                sprite = Image.FromFile(@"Images\wizardFront.png");
+            }
+            //Renders Wall
+            if (position.X >= 4 && position.X <= 6 && position.Y >= 1 && position.Y <= 6 || position.X == 7 && position.Y >= 5 && position.Y <=6 || position.X == 3 && position.Y == 6)  
+            {
+                sprite = Image.FromFile(@"Images\wallSingleTile.png");
+            }
+            //Renders powerTower
+            if (position.X == 1 && position.Y == 2)
+            {
+                sprite = Image.FromFile(@"Images\powerTower.png");
+            }
+            //Renders iceTower
+            if (position.X == 8 && position.Y == 7)
+            {
+                sprite = Image.FromFile(@"Images\iceTower.png");
+            }
+            //Renders Portal
+            if (position.X == 0 && position.Y == 7)
+            {
+                sprite = Image.FromFile(@"Images\portalA.png");
+            }
+            //Renders Trees
+            if (position.X >=2 && position.X <=7 && position.Y == 7 || position.X >= 2 && position.X <= 7 && position.Y == 9)
+            {
+                sprite = Image.FromFile(@"Images\tree.png");
+            }
+            //Renders path
+            if (position.X == 1 && position.Y >= 3 && position.Y <=6 || position.X == 2 && position.Y >= 5 && position.Y <= 6 || position.X == 3 && position.Y >= 0 && position.Y <= 5 || position.X == 7 && position.Y >= 0 && position.Y <= 4 || position.X == 8 && position.Y >= 4 && position.Y <= 6 || position.X == 9 && position.Y >= 6 && position.Y <= 8 || position.X >= 4 && position.X <= 6 && position.Y == 0 || position.X == 1 && position.Y == 8 || position.X == 8 && position.Y == 8)
+            {
+                sprite = Image.FromFile(@"Images\path.png");
+            }
+            //Renders forest path
+            if (position.X >= 2 && position.X <= 7 && position.Y == 8)
+            {
+                sprite = Image.FromFile(@"Images\path.png");
+            }
+            //Renders ground
+            if (position.X == 0 && position.Y >= 0 && position.Y <= 6 || position.X == 0 && position.Y >= 8 && position.Y <= 9 || position.X == 1 && position.Y >= 0 && position.Y <= 1 || position.X == 2 && position.Y >= 0 && position.Y <= 4 || position.X == 8 && position.Y >= 0 && position.Y <= 3 || position.X == 9 && position.Y >= 0 && position.Y <= 5 || position.X >= 8 && position.X <= 9 && position.Y == 9 || position.X == 1 && position.Y == 9)
+            {
+                sprite = Image.FromFile(@"Images\groundSingleTile.png");
             }
 
 
