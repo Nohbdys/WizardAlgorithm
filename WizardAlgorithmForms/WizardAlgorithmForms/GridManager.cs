@@ -43,7 +43,7 @@ namespace WizardAlgorithmForms
 
             //Sets the row count to then, this will create a 10 by 10 grid.
             cellRowCount = 10;
-            int Start = grid[0].F;
+
             CreateGrid();
         }
 

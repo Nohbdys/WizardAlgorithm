@@ -16,7 +16,7 @@ namespace WizardAlgorithmForms
         /// <summary>
         /// The grid position of the cell
         /// </summary>
-        private Point position;
+        public Point position;
 
         /// <summary>
         /// Is the cell walkable or blocked
