@@ -13,9 +13,6 @@ c:\users\oliver\documents\visual studio 2015\Projects\WizardAlgorithmForms\Wizar
 C:\Users\Oliver\Desktop\Programmerings Eksamen Noter\Algorytme\Algorithm Project\WizardAlgorithm\WizardAlgorithmForms\WizardAlgorithmForms\bin\Debug\WizardAlgorithmForms.exe.config
 C:\Users\Oliver\Desktop\Programmerings Eksamen Noter\Algorytme\Algorithm Project\WizardAlgorithm\WizardAlgorithmForms\WizardAlgorithmForms\obj\Debug\WizardAlgorithmForms.exe
 C:\Users\Oliver\Desktop\Programmerings Eksamen Noter\Algorytme\Algorithm Project\WizardAlgorithm\WizardAlgorithmForms\WizardAlgorithmForms\obj\Debug\WizardAlgorithmForms.pdb
-C:\Users\Oliver\Desktop\Programmerings Eksamen Noter\Algorytme\Algorithm Project\WizardAlgorithm\WizardAlgorithmForms\WizardAlgorithmForms\bin\Debug\Images\Goal.png
-C:\Users\Oliver\Desktop\Programmerings Eksamen Noter\Algorytme\Algorithm Project\WizardAlgorithm\WizardAlgorithmForms\WizardAlgorithmForms\bin\Debug\Images\Start.png
-C:\Users\Oliver\Desktop\Programmerings Eksamen Noter\Algorytme\Algorithm Project\WizardAlgorithm\WizardAlgorithmForms\WizardAlgorithmForms\bin\Debug\Images\Wall.png
 C:\Users\Oliver\Desktop\Programmerings Eksamen Noter\Algorytme\Algorithm Project\WizardAlgorithm\WizardAlgorithmForms\WizardAlgorithmForms\bin\Debug\WizardAlgorithmForms.exe
 C:\Users\Oliver\Desktop\Programmerings Eksamen Noter\Algorytme\Algorithm Project\WizardAlgorithm\WizardAlgorithmForms\WizardAlgorithmForms\bin\Debug\WizardAlgorithmForms.pdb
 C:\Users\Oliver\Desktop\Programmerings Eksamen Noter\Algorytme\Algorithm Project\WizardAlgorithm\WizardAlgorithmForms\WizardAlgorithmForms\obj\Debug\WizardAlgorithmForms.csprojResolveAssemblyReference.cache

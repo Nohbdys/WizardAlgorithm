@@ -107,6 +107,7 @@ namespace WizardAlgorithmForms
                     grid.Add(new Cell(new Point(x, y), cellSize));
                 }
             }
+           
         }
 
         //Spawns key
