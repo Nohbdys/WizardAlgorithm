@@ -84,21 +84,21 @@ namespace WizardAlgorithmForms
 
         }
 
-
+        //Spawns key
         public void KeySpawn()
         {
-            if (keyCount <= 1)
+            if (keyCount <= 1)  //Maximum of two keys can spawn - 0,1
             {
                 foreach (Cell cell in grid)
                 {
                     if (cell.isGround == true)
                     {
-                        Random rnd = new Random();
+                        Random rnd = new Random();      //Creates new random
 
-                        int x = rnd.Next(0, 9);
-                        int y = rnd.Next(0, 9);
+                        int x = rnd.Next(0, 9);         //Randomises x
+                        int y = rnd.Next(0, 9);         //Randomises y
 
-                        if (cell.position.X == x && cell.position.Y == y)
+                        if (cell.position.X == x && cell.position.Y == y)       //Sets cell position to randomised x and y
                         {
                             if (cell.walk == WALKABLE)
                             {
@@ -109,7 +109,7 @@ namespace WizardAlgorithmForms
                             }
                             else
                             {
-                                //Randomise ny x & y
+                                //Run method again, if randomised cell is unwalkable - x & y
                                 KeySpawn();
                             }
                         }

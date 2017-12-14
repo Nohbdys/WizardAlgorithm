@@ -4,19 +4,27 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using static WizardAlgorithmForms.CellType;
 using static WizardAlgorithmForms.Accesssible;
 
 namespace WizardAlgorithmForms
 {
-    enum CellType { START, GOAL, WALL, EMPTY };
+    /// <summary>
+    /// Enum for cells, walkable or unwalkable
+    /// </summary>
     enum Accesssible { WALKABLE, UNWALKABLE };
 
     class Cell
     {
-
+        /// <summary>
+        /// Sets all cells to false for ground
+        /// </summary>
         public bool isGround = false;
+
+        /// <summary>
+        /// Sets all cells to false for containing key
+        /// </summary>
         public bool hasKey = false;
+
         /// <summary>
         /// The grid position of the cell
         /// </summary>
