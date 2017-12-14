@@ -30,6 +30,12 @@ namespace WizardAlgorithmForms
         /// </summary>
         public Point position;
 
+
+        /// <summary>
+        /// F = G + H. G is cost per block, while H is the distance from start to end
+        /// </summary>
+        public int f, g, h;
+
         /// <summary>
         /// The size of the cell
         /// </summary>
@@ -38,11 +44,13 @@ namespace WizardAlgorithmForms
         /// <summary>
         /// The cell's sprite
         /// </summary>
-        public Image sprite;
-        
+        private Image sprite;
+
         /// <summary>
-        /// Sets all tiles to walkable as default
+        /// Sets the celltype to empty as default
         /// </summary>
+        CellType myType = EMPTY;
+
         public Accesssible walk = WALKABLE;
 
         /// <summary>
@@ -138,22 +146,50 @@ namespace WizardAlgorithmForms
             //Renders ground
             if (position.X == 0 && position.Y >= 0 && position.Y <= 6 || position.X == 0 && position.Y >= 8 && position.Y <= 9 || position.X == 1 && position.Y >= 0 && position.Y <= 1 || position.X == 2 && position.Y >= 0 && position.Y <= 4 || position.X == 8 && position.Y >= 0 && position.Y <= 3 || position.X == 9 && position.Y >= 0 && position.Y <= 5 || position.X >= 8 && position.X <= 9 && position.Y == 9 || position.X == 1 && position.Y == 9)
             {
-                if (!hasKey)
-                {
-                    sprite = Image.FromFile(@"Images\groundSingleTile.png");
-                    
-                }
-                isGround = true;
+                sprite = Image.FromFile(@"Images\groundSingleTile.png");
             }
-            
-            
 
             //Write's the cells grid position
             dc.DrawString(string.Format("{0}", position), new Font("Arial", 7, FontStyle.Regular), new SolidBrush(Color.Black), position.X * cellSize, (position.Y * cellSize) + 10);
           }
-        
-        
+
+        /// <summary>
+        /// Clicks the cell
+        /// </summary>
+        /// <param name="clickType">The click type</param>
+        public void Click(ref CellType clickType)
+        {
+            if (clickType == START) //If the click type is START
+            {
+                sprite = Image.FromFile(@"Images\Start.png");
+                myType = clickType;
+                clickType = GOAL;
+            }
+            else if (clickType == GOAL && myType != START) //If the click type is GOAL
+            {
+                sprite = Image.FromFile(@"Images\Goal.png");
+                clickType = WALL;
+                myType = GOAL;
+            }
+            else if (clickType == WALL && myType != START && myType != GOAL && myType != WALL) //If the click type is WALL
+            {
+                sprite = Image.FromFile(@"Images\Wall.png");
+                myType = WALL;
+            }
+            else if (clickType == WALL && myType == WALL) //If the click type is WALL
+            {
+                sprite = null;
+                myType = EMPTY;
+            }
+
+
+        }
     }
 }
 
 
+/// Til opsætning af wall
+//if (x >= 4 && x <= 6 && y >= 1 && y <= 6)  
+//{
+
+//}
