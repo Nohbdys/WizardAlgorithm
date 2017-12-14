@@ -85,6 +85,7 @@ namespace WizardAlgorithmForms
 
             //Renders the content of the buffered graphics context to the real context(Swap buffers)
             backBuffer.Render();
+            KeySpawn();
         }
 
         /// <summary>
