@@ -35,10 +35,8 @@ namespace WizardAlgorithmForms
             //Draws all our cells
             visualManager.Render();
 
-            if (Keyboard.IsKeyDown(Keys.F))
-            {
                 visualManager.aStar();
-            }
+            
             
 
 
@@ -51,8 +49,7 @@ namespace WizardAlgorithmForms
 
         private void Form1_MouseDown_1(object sender, MouseEventArgs e)
         {
-            //Checks if we clicked a cell
-            visualManager.ClickCell(this.PointToClient(Cursor.Position));
+        
         }
     }
 }

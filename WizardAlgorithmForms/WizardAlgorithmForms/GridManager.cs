@@ -19,7 +19,7 @@ namespace WizardAlgorithmForms
 
         private Cell startCell;
         private Cell endCell;
-        private int gScore;
+        private int gScore, keyCount;
 
         //Handeling of graphics
         private BufferedGraphics backBuffer;
@@ -36,10 +36,6 @@ namespace WizardAlgorithmForms
         /// </summary>
         public List<Cell> grid;
 
-        /// <summary>
-        /// The current click type
-        /// </summary>
-        private CellType clickType;
 
         public GridManager(Graphics dc, Rectangle displayRectangle)
         {
@@ -113,6 +109,7 @@ namespace WizardAlgorithmForms
         }
 
         //Spawns key
+        public void KeySpawn()
         {
             if (keyCount <= 1)  //Maximum of two keys can spawn - 0,1
             {
@@ -122,12 +119,9 @@ namespace WizardAlgorithmForms
                     {
                         Random rnd = new Random();      //Creates new random
 
-                        int x = rnd.Next(0, 9);
-                        int y = rnd.Next(0, 9);
                         int x = rnd.Next(0, 9);         //Randomises x
                         int y = rnd.Next(0, 9);         //Randomises y
 
-                        if (cell.position.X == x && cell.position.Y == y)
                         if (cell.position.X == x && cell.position.Y == y)       //Sets cell position to randomised x and y
                         {
                             if (cell.walk == WALKABLE)
@@ -142,6 +136,11 @@ namespace WizardAlgorithmForms
                                 //Run method again, if randomised cell is unwalkable - x & y
                                 KeySpawn();
                             }
+                        }
+                    }
+                }
+            }
+        }
 
         public void aStar()
         {
@@ -162,106 +161,104 @@ namespace WizardAlgorithmForms
                         endCell = cell;
                     }
 
-                        int x = rnd.Next(0, 9);
-                        int y = rnd.Next(0, 9);
                 }
 
-                        if (cell.position.X == x && cell.position.Y == y)
-                if (openGrid.Contains<Cell>(cell))
-                {
 
-                    #region ForLoop
-                    for (int x = -1; x <= 1; x++)
+                    if (openGrid.Contains<Cell>(cell))
                     {
-                        for (int y = -1; y <= 1; y++)
+
+                        #region ForLoop
+                        for (int x = -1; x <= 1; x++)
                         {
-                            //Skips if it checks itself
-                            if (x == 0 & y == 0)
+                            for (int y = -1; y <= 1; y++)
                             {
-                                continue;
-                            }
-
-                            // Cornors
-                            if ((x != 0 && y != 0))
-                            {
-                                if (x == -1 && y == -1)
+                                //Skips if it checks itself
+                                if (x == 0 & y == 0)
                                 {
-
-                                    tmpX = cell.position.X - 1;
-                                    tmpY = cell.position.Y - 1;
-
-                                    //   MessageBox.Show("Top left cornor");
-
-                                }
-                                else if (x == 1 && y == -1)
-                                {
-                                    tmpX = cell.position.X + 1;
-                                    tmpY = cell.position.Y - 1;
-                                    //    MessageBox.Show("Top right cornor");
-
-                                }
-                                else if (x == 1 && y == 1)
-                                {
-                                    tmpX = cell.position.X + 1;
-                                    tmpY = cell.position.Y + 1;
-                                    //    MessageBox.Show("Bottom right cornor");
-
-                                }
-                                else if (x == -1 && y == 1)
-                                {
-                                    tmpX = cell.position.X - 1;
-                                    tmpY = cell.position.Y + 1;
-                                    //    MessageBox.Show("Bottom left cornor");
-
+                                    continue;
                                 }
 
-                            }
-                            else
-                            {
-                                //Top and bottom
-                                if (x == 0)
+                                // Cornors
+                                if ((x != 0 && y != 0))
                                 {
-                                    if (y == -1)
+                                    if (x == -1 && y == -1)
                                     {
-                                        tmpX = cell.position.X;
-                                        tmpY = cell.position.Y - 1;
-                                    }
 
-                                    if (y == 1)
-                                    {
-                                        tmpX = cell.position.X;
-                                        tmpY = cell.position.Y + 1;
-                                    }
-                                }
-
-                                //Sides
-                                if (y == 0)
-                                {
-                                    if (x == -1)
-                                    {
                                         tmpX = cell.position.X - 1;
-                                        tmpY = cell.position.Y;
-                                    }
+                                        tmpY = cell.position.Y - 1;
 
-                                    if (x == 1)
+                                        //   MessageBox.Show("Top left cornor");
+
+                                    }
+                                    else if (x == 1 && y == -1)
                                     {
                                         tmpX = cell.position.X + 1;
-                                        tmpY = cell.position.Y;
+                                        tmpY = cell.position.Y - 1;
+                                        //    MessageBox.Show("Top right cornor");
+
                                     }
+                                    else if (x == 1 && y == 1)
+                                    {
+                                        tmpX = cell.position.X + 1;
+                                        tmpY = cell.position.Y + 1;
+                                        //    MessageBox.Show("Bottom right cornor");
+
+                                    }
+                                    else if (x == -1 && y == 1)
+                                    {
+                                        tmpX = cell.position.X - 1;
+                                        tmpY = cell.position.Y + 1;
+                                        //    MessageBox.Show("Bottom left cornor");
+
+                                    }
+
+                                }
+                                else
+                                {
+                                    //Top and bottom
+                                    if (x == 0)
+                                    {
+                                        if (y == -1)
+                                        {
+                                            tmpX = cell.position.X;
+                                            tmpY = cell.position.Y - 1;
+                                        }
+
+                                        if (y == 1)
+                                        {
+                                            tmpX = cell.position.X;
+                                            tmpY = cell.position.Y + 1;
+                                        }
+                                    }
+
+                                    //Sides
+                                    if (y == 0)
+                                    {
+                                        if (x == -1)
+                                        {
+                                            tmpX = cell.position.X - 1;
+                                            tmpY = cell.position.Y;
+                                        }
+
+                                        if (x == 1)
+                                        {
+                                            tmpX = cell.position.X + 1;
+                                            tmpY = cell.position.Y;
+                                        }
+                                    }
+
                                 }
 
+                                //Adds the cell in the position to openGrid list
+
+                                AddToList(tmpX, tmpY);
+
                             }
-
-                            //Adds the cell in the position to openGrid list
-
-                            AddToList(tmpX, tmpY);
-
                         }
+                        #endregion
+                        openGrid.Remove(cell);
+                        closedGrid.AddLast(cell);
                     }
-                    #endregion
-                    openGrid.Remove(cell);
-                    closedGrid.AddLast(cell);
-                }
 
 
                 //if (openGrid.Count >= 1)
@@ -293,13 +290,13 @@ namespace WizardAlgorithmForms
                     openGrid.AddLast(cell);
 
 
-                    if (diagonal && cell.g != 0)
-                    {
+                    //if (diagonal && cell.g != 0)
+                    //{
 
 
-                        cell.g = 14;
-                        diagonal = false;
-                    }
+                    //    cell.g = 14;
+                    //    diagonal = false;
+                    //}
                 }
             }
         }

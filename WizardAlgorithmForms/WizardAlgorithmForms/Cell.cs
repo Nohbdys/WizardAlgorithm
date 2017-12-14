@@ -44,12 +44,7 @@ namespace WizardAlgorithmForms
         /// <summary>
         /// The cell's sprite
         /// </summary>
-        private Image sprite;
-
-        /// <summary>
-        /// Sets the celltype to empty as default
-        /// </summary>
-        CellType myType = EMPTY;
+        public Image sprite;
 
         public Accesssible walk = WALKABLE;
 
@@ -103,7 +98,7 @@ namespace WizardAlgorithmForms
                 sprite = Image.FromFile(@"Images\wizardFront.png");
             }
             //Renders Wall
-            if (position.X >= 4 && position.X <= 6 && position.Y >= 1 && position.Y <= 6 || position.X == 7 && position.Y >= 5 && position.Y <=6 || position.X == 3 && position.Y == 6)  
+            if (position.X >= 4 && position.X <= 6 && position.Y >= 1 && position.Y <= 6 || position.X == 7 && position.Y >= 5 && position.Y <= 6 || position.X == 3 && position.Y == 6)
             {
                 sprite = Image.FromFile(@"Images\wallSingleTile.png");
                 walk = UNWALKABLE;
@@ -127,14 +122,14 @@ namespace WizardAlgorithmForms
                 walk = UNWALKABLE;
             }
             //Renders Trees
-            if (position.X >=2 && position.X <=7 && position.Y == 7 || position.X >= 2 && position.X <= 7 && position.Y == 9)
+            if (position.X >= 2 && position.X <= 7 && position.Y == 7 || position.X >= 2 && position.X <= 7 && position.Y == 9)
             {
                 sprite = Image.FromFile(@"Images\tree.png");
                 walk = UNWALKABLE;
 
             }
             //Renders path
-            if (position.X == 1 && position.Y >= 3 && position.Y <=6 || position.X == 2 && position.Y >= 5 && position.Y <= 6 || position.X == 3 && position.Y >= 0 && position.Y <= 5 || position.X == 7 && position.Y >= 0 && position.Y <= 4 || position.X == 8 && position.Y >= 4 && position.Y <= 6 || position.X == 9 && position.Y >= 6 && position.Y <= 8 || position.X >= 4 && position.X <= 6 && position.Y == 0 || position.X == 1 && position.Y == 8 || position.X == 8 && position.Y == 8)
+            if (position.X == 1 && position.Y >= 3 && position.Y <= 6 || position.X == 2 && position.Y >= 5 && position.Y <= 6 || position.X == 3 && position.Y >= 0 && position.Y <= 5 || position.X == 7 && position.Y >= 0 && position.Y <= 4 || position.X == 8 && position.Y >= 4 && position.Y <= 6 || position.X == 9 && position.Y >= 6 && position.Y <= 8 || position.X >= 4 && position.X <= 6 && position.Y == 0 || position.X == 1 && position.Y == 8 || position.X == 8 && position.Y == 8)
             {
                 sprite = Image.FromFile(@"Images\path.png");
             }
@@ -151,39 +146,8 @@ namespace WizardAlgorithmForms
 
             //Write's the cells grid position
             dc.DrawString(string.Format("{0}", position), new Font("Arial", 7, FontStyle.Regular), new SolidBrush(Color.Black), position.X * cellSize, (position.Y * cellSize) + 10);
-          }
-
-        /// <summary>
-        /// Clicks the cell
-        /// </summary>
-        /// <param name="clickType">The click type</param>
-        public void Click(ref CellType clickType)
-        {
-            if (clickType == START) //If the click type is START
-            {
-                sprite = Image.FromFile(@"Images\Start.png");
-                myType = clickType;
-                clickType = GOAL;
-            }
-            else if (clickType == GOAL && myType != START) //If the click type is GOAL
-            {
-                sprite = Image.FromFile(@"Images\Goal.png");
-                clickType = WALL;
-                myType = GOAL;
-            }
-            else if (clickType == WALL && myType != START && myType != GOAL && myType != WALL) //If the click type is WALL
-            {
-                sprite = Image.FromFile(@"Images\Wall.png");
-                myType = WALL;
-            }
-            else if (clickType == WALL && myType == WALL) //If the click type is WALL
-            {
-                sprite = null;
-                myType = EMPTY;
-            }
-
-
         }
+
     }
 }
 
