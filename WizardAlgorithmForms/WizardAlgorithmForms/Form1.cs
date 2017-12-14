@@ -14,6 +14,7 @@ namespace WizardAlgorithmForms
     {
 
         private GridManager visualManager;
+        private TestAstarClass aStarAlgoritm = new TestAstarClass();
 
         public Form1()
         {
@@ -24,22 +25,34 @@ namespace WizardAlgorithmForms
 
             //Instantiates the visual manager
             visualManager = new GridManager(CreateGraphics(), this.DisplayRectangle);
+
+
+
         }
 
         private void Loop_Tick(object sender, EventArgs e)
         {
             //Draws all our cells
             visualManager.Render();
+
+            if (Keyboard.IsKeyDown(Keys.F))
+            {
+                visualManager.aStar();
+            }
+            
+
+
         }
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
+            
         }
 
         private void Form1_MouseDown_1(object sender, MouseEventArgs e)
         {
-           
+            //Checks if we clicked a cell
+            visualManager.ClickCell(this.PointToClient(Cursor.Position));
         }
     }
 }
