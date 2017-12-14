@@ -4,6 +4,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using static WizardAlgorithmForms.Accesssible;
 
 namespace WizardAlgorithmForms
 {
@@ -24,11 +25,8 @@ namespace WizardAlgorithmForms
         /// This list contains all cells
         /// </summary>
         public List<Cell> grid;
-
-        /// <summary>
-        /// The current click type
-        /// </summary>
-        private CellType clickType;
+        
+        public int keyCount = 0;
 
         public GridManager(Graphics dc, Rectangle displayRectangle)
         {
@@ -58,9 +56,10 @@ namespace WizardAlgorithmForms
             {
                 cell.Render(dc);
             }
-        
+
             //Renders the content of the buffered graphics context to the real context(Swap buffers)
             backBuffer.Render();
+            KeySpawn();
         }
 
         /// <summary>
@@ -82,24 +81,42 @@ namespace WizardAlgorithmForms
                     grid.Add(new Cell(new Point(x, y), cellSize));
                 }
             }
+
         }
 
-        /// <summary>
-        /// If the mouse clicks on a cell
-        /// </summary>
-        /// <param name="mousePos"></param>
-        public void ClickCell(Point mousePos)
-        {
-            foreach (Cell cell in grid) //Finds the cell that we just clicked
-            {
-                if (cell.BoundingRectangle.IntersectsWith(new Rectangle(mousePos, new Size(1, 1))))
-                {
-                    cell.Click(ref clickType);
-                }
 
+        public void KeySpawn()
+        {
+            if (keyCount <= 1)
+            {
+                foreach (Cell cell in grid)
+                {
+                    if (cell.isGround == true)
+                    {
+                        Random rnd = new Random();
+
+                        int x = rnd.Next(0, 9);
+                        int y = rnd.Next(0, 9);
+
+                        if (cell.position.X == x && cell.position.Y == y)
+                        {
+                            if (cell.walk == WALKABLE)
+                            {
+                                cell.sprite = Image.FromFile(@"Images\key.png");
+                                cell.hasKey = true;
+                                keyCount++;
+
+                            }
+                            else
+                            {
+                                //Randomise ny x & y
+                                KeySpawn();
+                            }
+                        }
+                    }
+                }
             }
         }
-
 
     }
 }
