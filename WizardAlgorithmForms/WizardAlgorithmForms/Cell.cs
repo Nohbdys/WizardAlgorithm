@@ -141,7 +141,12 @@ namespace WizardAlgorithmForms
             //Renders ground
             if (position.X == 0 && position.Y >= 0 && position.Y <= 6 || position.X == 0 && position.Y >= 8 && position.Y <= 9 || position.X == 1 && position.Y >= 0 && position.Y <= 1 || position.X == 2 && position.Y >= 0 && position.Y <= 4 || position.X == 8 && position.Y >= 0 && position.Y <= 3 || position.X == 9 && position.Y >= 0 && position.Y <= 5 || position.X >= 8 && position.X <= 9 && position.Y == 9 || position.X == 1 && position.Y == 9)
             {
-                sprite = Image.FromFile(@"Images\groundSingleTile.png");
+                if (!hasKey)
+                {
+                    sprite = Image.FromFile(@"Images\groundSingleTile.png");
+                }
+
+                isGround = true;
             }
 
             //Write's the cells grid position
